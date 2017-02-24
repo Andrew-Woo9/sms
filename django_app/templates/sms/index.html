@@ -1,0 +1,12 @@
+{% extends 'common/base.html' %}
+
+{% block content %}
+
+<div class="index-container">
+	<form action="" method="post">{% csrf_token %}
+		{{ form }}
+		<button type="submit"> 전송 </button>
+	</form>
+</div>
+
+{% endblock %}
